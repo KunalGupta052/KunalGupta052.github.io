@@ -158,5 +158,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   }
+    // =========================================
+  // 3. DARK / LIGHT THEME
+  // =========================================
+
+  const themeToggle =
+    document.getElementById('themeToggle');
+
+  if (themeToggle) {
+
+    const savedTheme =
+      localStorage.getItem('theme');
+
+    if (savedTheme === 'light') {
+
+      document.body.classList.add('light-theme');
+
+      themeToggle.textContent = '☀';
+
+      themeToggle.setAttribute(
+        'aria-label',
+        'Switch to dark mode'
+      );
+
+      themeToggle.setAttribute(
+        'aria-pressed',
+        'true'
+      );
+
+    }
+
+
+    themeToggle.addEventListener('click', () => {
+
+      const isLight =
+        document.body.classList.toggle('light-theme');
+
+      localStorage.setItem(
+        'theme',
+        isLight ? 'light' : 'dark'
+      );
+
+      themeToggle.textContent =
+        isLight ? '☀' : '◐';
+
+      themeToggle.setAttribute(
+        'aria-label',
+        isLight
+          ? 'Switch to dark mode'
+          : 'Switch to light mode'
+      );
+
+      themeToggle.setAttribute(
+        'aria-pressed',
+        String(isLight)
+      );
+
+    });
+
+  }
 
 });
