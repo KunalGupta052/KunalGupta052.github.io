@@ -725,3 +725,88 @@ nav{
   }
 
 }
+/* =========================================
+   THEME TOGGLE
+========================================= */
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 7px;
+
+  background: var(--surface);
+  color: var(--text);
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--brick);
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+body.light-theme {
+
+  --bg: #F6F5F2;
+  --surface: #FFFFFF;
+  --surface-2: #EEECE7;
+
+  --border: #D8D5CE;
+
+  --text: #17191C;
+  --text-dim: #5E646C;
+  --text-faint: #858A91;
+
+  --brick: #A94331;
+  --brick-dim: #873626;
+
+  --sage: #3C896B;
+  --amber: #A87516;
+
+}
+
+
+/* Light theme navbar */
+
+body.light-theme nav {
+  background: rgba(246,245,242,.90);
+}
+
+
+/* Light theme photo shadow */
+
+body.light-theme .hero-photo {
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.12);
+}
+
+
+/* Light theme mobile menu */
+
+@media (max-width:700px) {
+
+  body.light-theme .nav-links {
+    background: rgba(246,245,242,.97);
+  }
+
+}
