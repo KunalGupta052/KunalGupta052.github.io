@@ -225,3 +225,297 @@
   .foot-note{
     margin-top:40px; font-family:var(--mono); font-size:12px; color:var(--text-faint);
   }
+/* =========================================
+   MODERN HERO
+========================================= */
+
+.hero {
+  padding: 72px 0 64px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 42px;
+}
+
+.hero-intro {
+  max-width: 650px;
+}
+
+.hero-greeting {
+  display: block;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.hero-name {
+  margin-bottom: 8px;
+}
+
+.hero-role {
+  margin-bottom: 22px;
+  font-size: 15px;
+}
+
+.separator {
+  color: var(--text-faint);
+  margin: 0 4px;
+}
+
+.hero-description {
+  max-width: 600px;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 10px 17px;
+
+  border-radius: 7px;
+
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    border-color .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--brick);
+  color: #fff;
+  border: 1px solid var(--brick);
+}
+
+.btn-primary:hover {
+  background: var(--brick-dim);
+}
+
+.btn-secondary {
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.btn-secondary:hover {
+  border-color: var(--brick);
+}
+
+
+/* =========================================
+   PROFILE PHOTO
+========================================= */
+
+.hero-photo-container {
+  position: relative;
+  width: min(330px, 100%);
+  justify-self: end;
+}
+
+.hero-photo {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, .30);
+
+  position: relative;
+  z-index: 2;
+
+  filter: saturate(.92);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.hero-photo:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 32px 85px rgba(0, 0, 0, .40);
+}
+
+
+/* Decorative grid behind photo */
+
+.photo-grid {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -28px;
+  bottom: -28px;
+
+  background-image:
+    linear-gradient(
+      rgba(199, 88, 62, .16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(199, 88, 62, .16) 1px,
+      transparent 1px
+    );
+
+  background-size: 18px 18px;
+
+  z-index: 1;
+}
+
+
+/* Small status badge */
+
+.photo-status {
+  position: absolute;
+
+  left: -25px;
+  bottom: 22px;
+
+  z-index: 4;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+  font-family: var(--mono);
+  font-size: 11px;
+
+  color: var(--text-dim);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, .25);
+}
+
+.photo-status .pip {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--sage);
+
+  box-shadow: 0 0 8px var(--sage);
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   HERO MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .hero-photo-container {
+    justify-self: center;
+    width: min(320px, 85%);
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .photo-status {
+    left: -10px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero-content {
+    gap: 35px;
+  }
+
+  .hero-photo-container {
+    width: min(290px, 90%);
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-role {
+    line-height: 1.8;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .btn {
+    flex: 1;
+  }
+
+  .photo-grid {
+    width: 110px;
+    height: 110px;
+
+    right: -18px;
+    bottom: -18px;
+  }
+
+}
