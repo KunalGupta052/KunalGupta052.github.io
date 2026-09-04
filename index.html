@@ -1,358 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kunal Gupta — Systems &amp; Backend Engineer</title>
-<meta name="description" content="Kunal Gupta — RHCSA-certified, RHCE in progress. Python backend and Linux automation engineer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="css/style.css?v=2">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunal Gupta — Python Backend Engineer &amp; Linux Specialist</title>
+  <meta name="description" content="Kunal Gupta is a Python Backend Engineer and RHCSA-certified Linux practitioner specializing in RHEL, Flask services, Ansible automation, and containerized backend systems.">
+  <meta name="keywords" content="Kunal Gupta, Python, Backend Engineer, Linux, RHEL, RHCSA, Ansible, Flask, Software Engineer Internship">
+  <meta name="author" content="Kunal Gupta">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunalgupta052.github.io/">
+  <meta property="og:title" content="Kunal Gupta — Python Backend Engineer &amp; Linux Specialist">
+  <meta property="og:description" content="Python Backend &amp; Infrastructure Automation Engineer. RHCSA-certified, building observable services, Ansible automation, and Linux containers.">
+  <meta property="og:image" content="assets/kunal-gupta.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kunal Gupta — Python Backend Engineer &amp; Linux Specialist">
+  <meta name="twitter:description" content="Python Backend &amp; Infrastructure Automation Engineer. RHCSA-certified, building observable services, Ansible automation, and Linux containers.">
+  <meta name="twitter:image" content="assets/kunal-gupta.jpg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-
-    <a href="#" class="nav-brand">
-      <span class="dot"></span>
-      Kunal Gupta
-    </a>
-
-    <div class="nav-links" id="navLinks">
-
-      <a href="#about">
-        About
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="Kunal Gupta Homepage">
+        <span class="nav-status-dot" title="System online"></span>
+        <span class="brand-text">kunal_gupta<span class="brand-sub">.py</span></span>
       </a>
 
-      <a href="#certs">
-        Certifications
-      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#certs" class="nav-link">Certifications</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/Kunal-Gupta-Resume.pdf" target="_blank" rel="noopener" class="nav-resume-btn">
+          Resume <span class="arrow">↗</span>
+        </a>
+      </div>
 
-      <a href="#projects">
-        Projects
-      </a>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+          <span class="theme-icon">◐</span>
+        </button>
 
-      <a href="#skills">
-        Skills
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
-      <a
-        href="assets/Kunal-Gupta-Resume.pdf"
-        target="_blank"
-        rel="noopener"
-        class="nav-resume">
-        Resume ↗
-      </a>
-
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
+  </nav>
 
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      aria-label="Open navigation menu"
-      aria-expanded="false">
+  <div class="main-wrap">
 
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- HERO SECTION -->
+    <header class="hero" id="hero">
+      <div class="hero-header-badge">
+        <span class="status-pip"></span>
+        <span class="badge-text">AVAILABLE FOR SOFTWARE ENGINEERING INTERNSHIPS</span>
+      </div>
 
-    </button>
+      <div class="hero-grid">
+        <div class="hero-main">
+          <h1 class="hero-title">Kunal Gupta</h1>
+          <p class="hero-subtitle">
+            Python Backend Engineer <span class="sep">/</span> Linux <span class="sep">/</span> RHEL <span class="sep">/</span> Automation
+          </p>
 
-    <button
-      class="theme-toggle"
-      id="themeToggle"
-      aria-label="Switch to light mode"
-      aria-pressed="false">
-      ◐
-    </button>
+          <p class="hero-lead">
+            I design reliable backend services, automate Red Hat Enterprise Linux infrastructure, and build close to the operating system using Python, Flask, Ansible, APIs, and containerized fleets.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Case Studies <span class="arrow">→</span>
+            </a>
+            <a href="assets/Kunal-Gupta-Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+              View Resume <span class="arrow">↗</span>
+            </a>
+            <a href="https://github.com/KunalGupta052" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/kunalgupta052" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <div class="photo-backdrop-grid"></div>
+            <img src="assets/kunal-gupta.jpg" alt="Kunal Gupta — Python Backend Engineer" class="profile-photo" width="320" height="400">
+            <div class="photo-card-status">
+              <span class="pip"></span>
+              <span class="text">RHCSA Certified · RHCE Candidate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TECHNICAL SIGNATURE: kunal-gupta.service -->
+      <div class="systemd-card" id="statusBlock" aria-label="System status panel for kunal-gupta.service">
+        <div class="systemd-header">
+          <div class="systemd-title">
+            <span class="status-indicator-dot"></span>
+            <span class="unit-name">kunal-gupta.service</span>
+            <span class="unit-type">- System Daemon</span>
+          </div>
+          <div class="systemd-badge">active (running)</div>
+        </div>
+        <div class="systemd-body">
+          <div class="sys-line">
+            <span class="sys-label">Loaded:</span>
+            <span class="sys-val">final-year B.Tech CSE (2023–2027)</span>
+          </div>
+          <div class="sys-line">
+            <span class="sys-label">Active:</span>
+            <span class="sys-val sys-green">active (running) since 2023; open for SWE Internships</span>
+          </div>
+          <div class="sys-line">
+            <span class="sys-label">Credentials:</span>
+            <span class="sys-val"><strong class="sys-green">RHCSA Verified</strong> · <span class="sys-amber">RHCE Ansible (Exam Scheduled)</span></span>
+          </div>
+          <div class="sys-line">
+            <span class="sys-label">Environment:</span>
+            <span class="sys-val">Python 3.11 · Flask · Ansible · RHEL 9 · Podman · MySQL · REST APIs</span><span class="terminal-cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">01</span>
+          <h2 class="section-heading">About &amp; Philosophy</h2>
+        </div>
+        <div class="section-content">
+          <div class="about-narrative">
+            <p>
+              I entered software engineering through the operating system. Before writing API handlers or designing database tables, I was configuring RHEL environments, managing storage with LVM, and writing Bash scripts to streamline system tasks. That foundation gives me a unique perspective on backend engineering.
+            </p>
+            <p>
+              Today, I build Python and Flask microservices that bridge software logic with real infrastructure — triggering Ansible playbooks over SSH, interacting with containerized workloads on Podman, and enforcing structured data validation. I don't stop at "it runs on my local machine" — I care about how software is packaged, tested, logged, and executed in production Linux environments.
+            </p>
+          </div>
+
+          <!-- Engineering Principles Sub-block -->
+          <div class="principles-block">
+            <h3 class="principles-heading">How I Work</h3>
+            <div class="principles-grid">
+              <div class="principle-card">
+                <span class="principle-num">01</span>
+                <h4>Understand the failure first</h4>
+                <p>Reproduce failure modes and identify root causes before writing code.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">02</span>
+                <h4>Build close to the system</h4>
+                <p>Respect OS boundaries, systemd services, security contexts, and container isolation.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">03</span>
+                <h4>Automate repetitive work</h4>
+                <p>If a setup requires more than two manual steps, write an Ansible playbook or script.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">04</span>
+                <h4>Prefer observable software</h4>
+                <p>Log execution state clearly, validate incoming inputs, and provide clean metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING JOURNEY SECTION -->
+    <section id="journey" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">02</span>
+          <h2 class="section-heading">Engineering Journey</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-lead">
+            A practical path focused on understanding software execution from system administration to backend engineering and infrastructure automation.
+          </p>
+
+          <div class="journey-pipeline">
+            <div class="journey-step">
+              <div class="step-marker">01</div>
+              <div class="step-content">
+                <span class="step-tag">FOUNDATION</span>
+                <h3 class="step-title">Linux Administration</h3>
+                <p class="step-desc">Mastered core Linux system management, user privileges, SELinux enforcement, firewalls, network storage, and shell scripting on RHEL.</p>
+              </div>
+            </div>
+
+            <div class="journey-step">
+              <div class="step-marker">02</div>
+              <div class="step-content">
+                <span class="step-tag">DEVELOPMENT</span>
+                <h3 class="step-title">Python &amp; Backend Systems</h3>
+                <p class="step-desc">Built RESTful web services and backend APIs using Python and Flask, implementing JWT authentication, structured validation, and relational database schemas.</p>
+              </div>
+            </div>
+
+            <div class="journey-step">
+              <div class="step-marker">03</div>
+              <div class="step-content">
+                <span class="step-tag">AUTOMATION</span>
+                <h3 class="step-title">Infrastructure Automation</h3>
+                <p class="step-desc">Completed Red Hat Certified Engineer (RHCE) training, authoring Ansible playbooks, custom roles, and automated multi-node configuration deployments.</p>
+              </div>
+            </div>
+
+            <div class="journey-step">
+              <div class="step-marker">04</div>
+              <div class="step-content">
+                <span class="step-tag">CONTAINERS &amp; CI/CD</span>
+                <h3 class="step-title">Containerized Fleets</h3>
+                <p class="step-desc">Orchestrated container workloads using Podman and Docker, wiring GitHub Actions automation for continuous testing and automated deployment pipelines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certs" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">03</span>
+          <h2 class="section-heading">Certifications</h2>
+        </div>
+        <div class="section-content">
+          <div class="certs-grid">
+            
+            <!-- RHCSA -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-row">
+                  <span class="cert-issuer">Red Hat</span>
+                  <span class="status-pill status-verified">✓ VERIFIED</span>
+                </div>
+                <h3 class="cert-title">RHCSA — Red Hat Certified System Administrator</h3>
+              </div>
+              <p class="cert-description">
+                Performance-based hands-on certification proving practical expertise in RHEL system administration, storage allocation (LVM), security policies (SELinux/Firewalld), systemd service handling, and shell script automation.
+              </p>
+              <div class="cert-scope">
+                <span class="scope-label">CORE SCOPE:</span>
+                <div class="scope-tags">
+                  <span class="mini-tag">RHEL 9</span>
+                  <span class="mini-tag">systemd</span>
+                  <span class="mini-tag">SELinux</span>
+                  <span class="mini-tag">LVM</span>
+                  <span class="mini-tag">Firewalld</span>
+                  <span class="mini-tag">Bash</span>
+                </div>
+              </div>
+              <div class="cert-footer">
+                <a href="https://www.credly.com/badges/cf19606c-d6d9-4066-8407-82d836ac392b" target="_blank" rel="noopener" class="cert-link">
+                  Verify Credential on Credly <span class="arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- RHCE -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-row">
+                  <span class="cert-issuer">Red Hat</span>
+                  <span class="status-pill status-progress">IN PROGRESS · EXAM SCHEDULED</span>
+                </div>
+                <h3 class="cert-title">RHCE — Red Hat Certified Engineer</h3>
+              </div>
+              <p class="cert-description">
+                Advanced certification focused on enterprise automation using Ansible. Comprehensive coursework complete; performance-based practical exam scheduled. The RHEL Fleet Manager project below represents practical application of this training.
+              </p>
+              <div class="cert-scope">
+                <span class="scope-label">TRAINING SCOPE:</span>
+                <div class="scope-tags">
+                  <span class="mini-tag">Ansible Engine</span>
+                  <span class="mini-tag">Playbooks</span>
+                  <span class="mini-tag">Roles &amp; Tasks</span>
+                  <span class="mini-tag">Inventory Mgmt</span>
+                  <span class="mini-tag">System Roles</span>
+                </div>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-note">Training complete · Exam scheduled</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">04</span>
+          <h2 class="section-heading">Featured Engineering Projects</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-lead">
+            Case studies of software and infrastructure automation projects built with Python, Flask, Ansible, containers, and Linux services.
+          </p>
+
+          <!-- Technology Filter Bar -->
+          <div class="project-filter-bar" role="tablist" aria-label="Filter projects by technology">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ALL PROJECTS</button>
+            <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">PYTHON</button>
+            <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">BACKEND</button>
+            <button class="filter-btn" data-filter="linux" role="tab" aria-selected="false">LINUX / RHEL</button>
+            <button class="filter-btn" data-filter="automation" role="tab" aria-selected="false">AUTOMATION</button>
+          </div>
+
+          <div class="projects-list">
+
+            <!-- PROJECT 01: RHEL Fleet Manager -->
+            <article class="case-study-card" data-tags="python backend linux automation">
+              <div class="cs-header">
+                <div class="cs-meta">
+                  <span class="cs-num">PROJECT 01</span>
+                  <span class="cs-category">INFRASTRUCTURE AUTOMATION DASHBOARD</span>
+                </div>
+                <h3 class="cs-title">RHEL Fleet Manager</h3>
+                <p class="cs-one-liner">Flask control plane for executing Ansible playbooks and tracking live status across multi-node Linux fleets.</p>
+              </div>
+
+              <div class="cs-grid">
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">PROBLEM</h4>
+                    <p class="cs-block-text">
+                      Executing repetitive administration operations—user lifecycle, package installation, service monitoring, log rotation—manually across multiple Linux nodes is error-prone and lacks observable execution state.
+                    </p>
+                  </div>
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">WHAT I BUILT</h4>
+                    <p class="cs-block-text">
+                      Engineered a Flask web interface that triggers Ansible playbooks over SSH against target inventory groups, recording execution state and output logs into a database for historical auditing and live web visualization.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">ENGINEERING HIGHLIGHTS</h4>
+                    <ul class="cs-highlights">
+                      <li>Simulated multi-node Linux fleet using Podman containers on a RHEL 9 VM for safe execution testing.</li>
+                      <li>Programmatic Ansible playbook invocation via Python background execution handlers.</li>
+                      <li>SQL logging of playbook execution runs, host responses, and task exit codes.</li>
+                      <li>Centralized user management, package provisioning, and systemd monitoring commands.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-footer">
+                <div class="cs-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Ansible</span>
+                  <span class="tech-tag">RHEL 9</span>
+                  <span class="tech-tag">Podman</span>
+                  <span class="tech-tag">SSH</span>
+                  <span class="tech-tag">SQL</span>
+                </div>
+                <div class="cs-links">
+                  <a href="https://github.com/KunalGupta052/rhel-fleet-manager" target="_blank" rel="noopener" class="btn-link">
+                    Source Code <span class="arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 02: Dincharya Analyzer -->
+            <article class="case-study-card" data-tags="python backend">
+              <div class="cs-header">
+                <div class="cs-meta">
+                  <span class="cs-num">PROJECT 02</span>
+                  <span class="cs-category">FULL-STACK BACKEND &amp; CI/CD</span>
+                </div>
+                <h3 class="cs-title">Dincharya Analyzer</h3>
+                <p class="cs-one-liner">Routine analysis engine with structured request validation, relational storage, and containerized deployment.</p>
+              </div>
+
+              <div class="cs-grid">
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">PROBLEM</h4>
+                    <p class="cs-block-text">
+                      Routine tracking tools often suffer from inconsistent data entry, unvalidated payload structures, and fragile deployment environments that differ between local development and production servers.
+                    </p>
+                  </div>
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">WHAT I BUILT</h4>
+                    <p class="cs-block-text">
+                      Created a Python Flask service with SQL database persistence, strict request schema validation, Docker containerization, and an automated GitHub Actions deployment pipeline to a cloud application platform.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">ENGINEERING HIGHLIGHTS</h4>
+                    <ul class="cs-highlights">
+                      <li>Designed structured API request validation handlers to enforce payload integrity before database writes.</li>
+                      <li>Containerized with Docker to guarantee identical environment behavior locally and in production.</li>
+                      <li>Implemented GitHub Actions CI/CD pipeline running automated checks on every commit.</li>
+                      <li>Relational SQL schema design for efficient querying and routine metric analysis.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-footer">
+                <div class="cs-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">GitHub Actions</span>
+                  <span class="tech-tag">CI/CD</span>
+                </div>
+                <div class="cs-links">
+                  <a href="https://dincharya-analyzer.onrender.com/" target="_blank" rel="noopener" class="btn-link btn-link-primary">
+                    Live Demo <span class="arrow">↗</span>
+                  </a>
+                  <a href="https://github.com/KunalGupta052/dincharya_analyzer" target="_blank" rel="noopener" class="btn-link">
+                    Source Code <span class="arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 03: Plant Doctor -->
+            <article class="case-study-card" data-tags="python backend">
+              <div class="cs-header">
+                <div class="cs-meta">
+                  <span class="cs-num">PROJECT 03</span>
+                  <span class="cs-category">RESTful API &amp; SERVICE INTEGRATION</span>
+                </div>
+                <h3 class="cs-title">Plant Doctor</h3>
+                <p class="cs-one-liner">Flask REST API providing authenticated disease diagnosis by integrating external computer vision inference.</p>
+              </div>
+
+              <div class="cs-grid">
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">PROBLEM</h4>
+                    <p class="cs-block-text">
+                      Exposing raw AI models directly to client applications leads to unhandled API rate limits, insecure authentication, and inconsistent response formatting for client applications.
+                    </p>
+                  </div>
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">WHAT I BUILT</h4>
+                    <p class="cs-block-text">
+                      Built a Flask REST API backend wrapper that authenticates requests via JWT, validates image payload metadata, handles error conditions, and formats diagnostic outputs cleanly for consumption.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cs-column">
+                  <div class="cs-block">
+                    <h4 class="cs-block-label">ENGINEERING HIGHLIGHTS</h4>
+                    <ul class="cs-highlights">
+                      <li>Implemented JSON Web Token (JWT) state management and access verification.</li>
+                      <li>Encapsulated external AI model inference behind clean internal service interfaces.</li>
+                      <li>Comprehensive error handling and HTTP status code normalization.</li>
+                      <li>Dockerized container build deployed live to cloud hosting.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-footer">
+                <div class="cs-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">REST API</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">AI Integration</span>
+                </div>
+                <div class="cs-links">
+                  <a href="https://kunalgupta052-plant-doctor.onrender.com/" target="_blank" rel="noopener" class="btn-link btn-link-primary">
+                    Live Demo <span class="arrow">↗</span>
+                  </a>
+                  <a href="https://github.com/KunalGupta052/plant-doctor" target="_blank" rel="noopener" class="btn-link">
+                    Source Code <span class="arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">05</span>
+          <h2 class="section-heading">Technical Inventory</h2>
+        </div>
+        <div class="section-content">
+          
+          <div class="terminal-prompt-box">
+            <span class="prompt-user">kunal@rhel-host</span>:<span class="prompt-path">~</span>$ dnf list --installed | grep kunal-spec
+          </div>
+
+          <div class="skills-grid">
+            
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="cat-icon">⚡</span> SYSTEMS &amp; LINUX
+              </h3>
+              <ul class="skill-items">
+                <li><span class="bullet">●</span> RHEL 9 Enterprise Linux</li>
+                <li><span class="bullet">●</span> systemd Service Management</li>
+                <li><span class="bullet">●</span> SELinux Security Contexts</li>
+                <li><span class="bullet">●</span> Firewalld / Port Rules</li>
+                <li><span class="bullet">●</span> LVM Storage Allocation</li>
+                <li><span class="bullet">●</span> Bash &amp; Shell Scripting</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="cat-icon">⚙</span> AUTOMATION &amp; IaC
+              </h3>
+              <ul class="skill-items">
+                <li><span class="bullet">●</span> Ansible Playbooks</li>
+                <li><span class="bullet">●</span> Ansible Roles &amp; Inventories</li>
+                <li><span class="bullet">●</span> System Configuration Drift</li>
+                <li><span class="bullet">●</span> Automated SSH Execution</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="cat-icon">🐍</span> PYTHON &amp; BACKEND
+              </h3>
+              <ul class="skill-items">
+                <li><span class="bullet">●</span> Python 3.11 / Standard Lib</li>
+                <li><span class="bullet">●</span> Flask Framework</li>
+                <li><span class="bullet">●</span> RESTful API Design</li>
+                <li><span class="bullet">●</span> JWT Authentication</li>
+                <li><span class="bullet">●</span> Request Payload Validation</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="cat-icon">📦</span> CONTAINERS &amp; VIRTUALIZATION
+              </h3>
+              <ul class="skill-items">
+                <li><span class="bullet">●</span> Podman (Rootless Containers)</li>
+                <li><span class="bullet">●</span> Docker &amp; Dockerfile Builds</li>
+                <li><span class="bullet">●</span> Container Network Isolation</li>
+                <li><span class="bullet">●</span> VMware Workstation Pro</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="cat-icon">🗄</span> DATA &amp; CLOUD
+              </h3>
+              <ul class="skill-items">
+                <li><span class="bullet">●</span> MySQL / SQLite Databases</li>
+                <li><span class="bullet">●</span> SQL Schema Design</li>
+                <li><span class="bullet">●</span> AWS (EC2, basic admin)</li>
+                <li><span class="bullet">●</span> Git &amp; GitHub Actions CI/CD</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY EXPLORING SECTION -->
+    <section id="exploring" class="section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">06</span>
+          <h2 class="section-heading">Currently Exploring</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-lead">Continuous technical growth areas currently being studied and implemented in side labs.</p>
+          
+          <div class="exploring-cards">
+            <div class="exploring-card">
+              <span class="exp-tag">AUTOMATION</span>
+              <h4>Ansible Automation Controller / Automation Hub</h4>
+              <p>Expanding playbook management into enterprise workflow templates and RBAC control.</p>
+            </div>
+
+            <div class="exploring-card">
+              <span class="exp-tag">PERFORMANCE</span>
+              <h4>Linux Kernel Diagnostics &amp; eBPF</h4>
+              <p>Studying system performance analysis, memory metrics, and I/O bottlenecks using modern Linux observability tools.</p>
+            </div>
+
+            <div class="exploring-card">
+              <span class="exp-tag">SYSTEMS</span>
+              <h4>Go Fundamentals for Backend Microservices</h4>
+              <p>Learning Go syntax, concurrency primitives (goroutines/channels), and lightweight HTTP service design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <footer id="contact" class="footer-section">
+      <div class="section-grid">
+        <div class="section-sidebar">
+          <span class="section-number">07</span>
+          <h2 class="section-heading">Contact</h2>
+        </div>
+        <div class="section-content">
+          <div class="contact-box">
+            <h2 class="contact-headline">LET'S BUILD SOMETHING USEFUL.</h2>
+            <p class="contact-subtext">
+              I am actively seeking <strong>Software Engineering Internships</strong> and engineering conversations around Python backend services, RHEL systems, infrastructure automation, and container orchestration.
+            </p>
+
+            <div class="contact-actions">
+              <a href="mailto:kunalgupta5627@gmail.com" class="btn btn-primary btn-large">
+                Send Email <span class="arrow">→</span>
+              </a>
+              <a href="https://linkedin.com/in/kunalgupta052" target="_blank" rel="noopener" class="btn btn-secondary">
+                LinkedIn Profile <span class="arrow">↗</span>
+              </a>
+              <a href="https://github.com/KunalGupta052" target="_blank" rel="noopener" class="btn btn-secondary">
+                GitHub Profile <span class="arrow">↗</span>
+              </a>
+            </div>
+
+            <div class="contact-direct-info">
+              <div class="info-item">
+                <span class="info-label">DIRECT EMAIL:</span>
+                <a href="mailto:kunalgupta5627@gmail.com" class="info-val">kunalgupta5627@gmail.com</a>
+              </div>
+              <div class="info-item">
+                <span class="info-label">LOCATION:</span>
+                <span class="info-val">India (Open to Remote &amp; Global Opportunities)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="footer-text">
+              Designed &amp; iterated personally by Kunal Gupta. Built with plain HTML, CSS, and Vanilla JavaScript. No tracking, no frameworks.
+            </p>
+            <p class="footer-copy">© 2026 Kunal Gupta. Hosted directly on GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </div>
-</nav>
 
-<div class="wrap">
-
-  <!-- HERO -->
-  <header class="hero">
-
-  <div class="hero-content">
-
-    <div class="hero-intro">
-
-      <span class="hero-greeting">
-        Hi, I'm
-      </span>
-
-      <h1 class="hero-name">
-        Kunal Gupta
-      </h1>
-
-      <p class="hero-role">
-        Python Backend Engineer
-        <span class="separator">·</span>
-        Linux
-        <span class="separator">·</span>
-        RHEL
-        <span class="separator">·</span>
-        Automation
-      </p>
-
-      <p class="hero-description">
-        I build backend systems, automate Linux infrastructure,
-        and turn ideas into reliable software using Python,
-        RHEL, APIs and containers.
-      </p>
-
-      <div class="hero-actions">
-
-        <a
-          href="#projects"
-          class="btn btn-primary">
-          View Projects
-        </a>
-
-        <a
-          href="assets/Kunal-Gupta-Resume.pdf"
-          class="btn btn-secondary"
-          target="_blank"
-          rel="noopener">
-          View Resume ↗
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero-photo-container">
-
-      <div class="photo-grid"></div>
-
-      <img
-        src="assets/kunal-gupta.jpg"
-        alt="Kunal Gupta — Python Backend Engineer"
-        class="hero-photo"
-      >
-
-      <div class="photo-status">
-        <span class="pip"></span>
-        Open to opportunities
-      </div>
-
-    </div>
-
-  </div>
-
-    <div class="status-block" id="statusBlock" aria-label="Status summary">
-      <div class="status-title"><span class="pip"></span>kunal-gupta.service</div>
-      <div class="status-line" style="animation-delay:.1s">
-        <span class="label">Loaded:</span><span class="val">final-year B.Tech, Computer Science &amp; Engineering (2023–2027)</span>
-      </div>
-      <div class="status-line" style="animation-delay:.5s">
-        <span class="label">Active:</span><span class="val active">available — seeking Software Engineering Internship</span>
-      </div>
-      <div class="status-line" style="animation-delay:.9s">
-        <span class="label">Certs:</span><span class="val active">RHCSA (verified)</span> · <span class="val pending">RHCE (exam scheduled)</span>
-      </div>
-      <div class="status-line" style="animation-delay:1.3s">
-        <span class="label">Stack:</span><span class="val">Python · Flask · Ansible · RHEL · Docker/Podman</span><span class="cursor" aria-hidden="true"></span>
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-head">
-      <span class="section-tag">01</span>
-      <h2 class="section-title">About</h2>
-    </div>
-    <p class="about-text">
-      I'm a final-year Computer Science student who got into backend engineering through
-      Linux, not the other way around. <strong>RHCSA-certified</strong>, currently finishing
-      <strong>RHCE</strong> with the Ansible automation coursework done and the exam scheduled.
-      Most of what I build sits at the intersection of the two: Python and Flask services that
-      actually talk to real infrastructure — triggering playbooks over SSH, watching systemd
-      services, shipping through Docker and CI pipelines instead of stopping at "runs on my machine."
-      I like understanding how something breaks before I try to build around it, and I'm looking
-      for a team where that curiosity is useful.
-    </p>
-  </section>
-
-  <!-- CERTS -->
-  <section id="certs">
-    <div class="section-head">
-      <span class="section-tag">02</span>
-      <h2 class="section-title">Certifications</h2>
-    </div>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <div class="cert-top">
-          <span class="cert-name">RHCSA</span>
-          <span class="cert-status verified">Verified</span>
-        </div>
-        <p class="cert-desc">
-          Red Hat Certified System Administrator — earned through Red Hat's hands-on,
-          performance-based practical exam. Covers RHEL installation, user/group management,
-          LVM storage, SELinux, systemd, and networking.
-        </p>
-        <a class="cert-link" href="https://www.credly.com/badges/cf19606c-d6d9-4066-8407-82d836ac392b" target="_blank" rel="noopener">view credential →</a>
-      </div>
-      <div class="cert-card">
-        <div class="cert-top">
-          <span class="cert-name">RHCE</span>
-          <span class="cert-status pending">Yet To Take</span>
-        </div>
-        <p class="cert-desc">
-          Red Hat Certified Engineer — Ansible automation training complete. Final
-          performance-based exam scheduled. RHEL Fleet Manager below is the direct product
-          of this training.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-head">
-      <span class="section-tag">03</span>
-      <h2 class="section-title">Projects</h2>
-    </div>
-
-    <div class="project">
-      <div class="project-top">
-        <span class="project-name">RHEL Fleet Manager</span>
-        <div class="project-links">
-          <a href="https://github.com/KunalGupta052/rhel-fleet-manager" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        A Flask dashboard that triggers Ansible playbooks — user management, package installs,
-        service monitoring, log rotation — across a multi-node Linux fleet over SSH. I simulated
-        the fleet with Podman containers on a RHEL 9 VM so every playbook could be tested safely
-        before touching anything real, and every run gets logged to SQL with live status
-        surfaced back through the dashboard.
-      </p>
-      <div class="tag-row">
-        <span class="tag">python</span><span class="tag">flask</span><span class="tag">ansible</span>
-        <span class="tag">rhel-9</span><span class="tag">podman</span><span class="tag">ssh</span><span class="tag">sql</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-top">
-        <span class="project-name">Dincharya Analyzer</span>
-        <div class="project-links">
-          <a href="https://github.com/KunalGupta052/dincharya_analyzer" target="_blank" rel="noopener">GitHub →</a>
-          <a href="https://dincharya-analyzer.onrender.com/" target="_blank" rel="noopener">Live →</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        A full-stack Python/Flask and SQL app, containerized with Docker so local and production
-        environments behave identically. Wired up a GitHub Actions pipeline that runs tests and
-        deploys automatically on every commit — the backend's API layer is built around
-        structured request validation to keep data integrity consistent end to end.
-      </p>
-      <div class="tag-row">
-        <span class="tag">python</span><span class="tag">flask</span><span class="tag">sql</span>
-        <span class="tag">docker</span><span class="tag">github-actions</span><span class="tag">ci/cd</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-top">
-        <span class="project-name">Plant Doctor</span>
-        <div class="project-links">
-          <a href="https://github.com/KunalGupta052/plant-doctor" target="_blank" rel="noopener">GitHub →</a>
-          <a href="https://kunalgupta052-plant-doctor.onrender.com/" target="_blank" rel="noopener">Live →</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        A Flask REST API that takes a plant photo and returns a structured disease diagnosis,
-        integrating an external AI image-analysis service behind the scenes. Built with request
-        validation, error handling, and JWT authentication, then containerized with Docker and
-        deployed live — the full build-to-deploy path in one project.
-      </p>
-      <div class="tag-row">
-        <span class="tag">python</span><span class="tag">flask</span><span class="tag">rest-api</span>
-        <span class="tag">jwt</span><span class="tag">docker</span><span class="tag">ai-integration</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-head">
-      <span class="section-tag">04</span>
-      <h2 class="section-title">Skills</h2>
-    </div>
-    <p class="skills-term"><span class="prompt">$</span> dnf list --installed | grep kunal</p>
-    <div class="skill-groups">
-      <div>
-        <div class="skill-group-name">Linux &amp; Systems</div>
-        <div class="skill-list">
-          <div><span class="pip">●</span>RHEL 9</div>
-          <div><span class="pip">●</span>systemd</div>
-          <div><span class="pip">●</span>SELinux</div>
-          <div><span class="pip">●</span>Firewalld</div>
-          <div><span class="pip">●</span>LVM</div>
-          <div><span class="pip">●</span>Bash / Shell Scripting</div>
-        </div>
-      </div>
-      <div>
-        <div class="skill-group-name">Automation &amp; IaC</div>
-        <div class="skill-list">
-          <div><span class="pip">●</span>Ansible (Playbooks, Roles, Inventories)</div>
-        </div>
-        <div class="skill-group-name" style="margin-top:18px;">Containers</div>
-        <div class="skill-list">
-          <div><span class="pip">●</span>Podman</div>
-          <div><span class="pip">●</span>Docker</div>
-          <div><span class="pip">●</span>VMware Workstation</div>
-        </div>
-      </div>
-      <div>
-        <div class="skill-group-name">Backend</div>
-        <div class="skill-list">
-          <div><span class="pip">●</span>Python</div>
-          <div><span class="pip">●</span>Flask</div>
-          <div><span class="pip">●</span>REST APIs</div>
-          <div><span class="pip">●</span>JWT Auth</div>
-        </div>
-      </div>
-      <div>
-        <div class="skill-group-name">Data &amp; Cloud</div>
-        <div class="skill-list">
-          <div><span class="pip">●</span>SQL (MySQL / SQLite)</div>
-          <div><span class="pip">●</span>AWS (EC2, basic admin)</div>
-          <div><span class="pip">●</span>Git / GitHub Actions</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <footer id="contact">
-    <h2 class="contact-title">Let's talk</h2>
-    <p class="contact-sub">
-      Open to Software Engineering Internships — happy to walk through any project above in
-      more detail.
-    </p>
-    <div class="contact-links">
-      <a href="mailto:kunalgupta5627@gmail.com">kunalgupta5627@gmail.com</a>
-      <a href="https://linkedin.com/in/kunalgupta052" target="_blank" rel="noopener">linkedin.com/in/kunalgupta052</a>
-      <a href="https://github.com/KunalGupta052" target="_blank" rel="noopener">github.com/KunalGupta052</a>
-    </div>
-    <p class="foot-note">Built with a single HTML file. No framework, no tracking.</p>
-  </footer>
-
-</div>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
